@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _{Mr.-Robogers-Neighborhood}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{This applications serves as practice on arrays and loops and allows the user to enter a number and recieve a response depending on the input.}, {6/12/2020}_
 
-#### By _**{List of contributors}**_
+#### By _**{David Cole}**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_{This application was build using HTML, CSS, Bootstrap 3.3.7 JavaScript, and jQuery 3.5.1. The purpose of this project is to create a functional website which allows the user to enter a numerical input. The program will then use the business logic portion of the scripts.js file to process the input and determine if it is valid. If it is, the program will perform various logical checks to determine which response to output to the user. If the user fails to enter the correct input type, the program will continue to prompt them for input until they succeed. }_
 
 ## Setup/Installation Requirements
 
