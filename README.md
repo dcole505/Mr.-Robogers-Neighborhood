@@ -31,6 +31,9 @@ _This application was build using HTML, CSS, Bootstrap 3.3.7 JavaScript, and jQu
 * Spec: The change to number 3 will take precedence over the changes to 1 & 2. Those changes will be ignored.
   * Input: "123"
   * Output: "Won't you be my neighbor?"
+* Spec: The user is able to enter a new number and see new results over and over.
+  * Input: "5"
+  * Output: "0, "Beep!", "Boop", "Won't you be my neighbor?", "4", "5"/ (refresh page to allow the user to input a new number.)
 
 
 ## Setup/Installation Requirements
