@@ -12,7 +12,11 @@ function processInput(userInput) {
   const convertedArray = separatedInput.map(Number);
   console.log(separatedInput);
 
-  while(convertedArray.includes(NaN)){
-    alert("Please enter a valid numerical input!");
+  if(convertedArray.includes(NaN)){
+    $("#form-clear").click(function() {
+      location.reload(true);
+      alert("Please enter valid numerical input!")
+    });
+    
   }
 }
