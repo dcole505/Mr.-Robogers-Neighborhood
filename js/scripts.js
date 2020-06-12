@@ -22,17 +22,11 @@ function processInput(userInput) {
       for (i = 0; i < stringArray.length; i++) {
         if (stringArray[i].startsWith("1")) {
           stringArray[i] = stringArray[i].replace(stringArray[i],"Beep!");
-        }
-      }
-      for (i = 0; i < stringArray.length; i++) {
-        if (stringArray[i].startsWith("2")) {
+        } else if (stringArray[i].startsWith("2")) {
           stringArray[i] = stringArray[i].replace(stringArray[i],"Boop");
-        }
-      }
-      for (i = 0; i < stringArray.length; i++) {
-        if (stringArray[i].startsWith("3")) {
-          stringArray[i] = stringArray[i].replace(stringArray[i],"Won't you be my neighbor?");
-        }
+          } else if (stringArray[i].startsWith("3")) {
+            stringArray[i] = stringArray[i].replace(stringArray[i],"Won't you be my neighbor?");
+            }
       }
       console.log(stringArray);
   }
