@@ -1,0 +1,10 @@
+.jumbotron {
+  text-align: center;
+  font-family: Impact;
+  background-color: red;
+  color: yellow;
+}
+
+#form-label {
+  text-align: center;
+}
