@@ -8,3 +8,7 @@
 #form-label {
   text-align: center;
 }
+
+#display-result {
+  display: none;
+}

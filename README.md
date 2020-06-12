@@ -48,7 +48,7 @@ _This application was build using HTML, CSS, Bootstrap 3.3.7 JavaScript, and jQu
 
 ## Known Bugs
 
-_Bugs go here_
+_There are no known bugs at this time._
 
 ## Support and contact details
 
