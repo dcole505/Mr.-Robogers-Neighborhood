@@ -1,9 +1,11 @@
 $(document).ready(function() {
   $("#input-form").submit(function(event){
     event.preventDefault(event);
+    $("#display-result").hide();
 
     const userInput = parseInt($("input#user-input").val());
-    processInput(userInput);
+    const displayArray = processInput(userInput);
+    display(displayArray);
   });
 });
 
@@ -28,7 +30,7 @@ function processInput(userInput) {
             stringArray[i] = stringArray[i].replace(stringArray[i],"Won't you be my neighbor?");
             }
       }
-      console.log(stringArray);
+      return stringArray;
   }
 }
 
@@ -39,4 +41,9 @@ function resetPage() {
     event.preventDefault();
     location.reload(true);
   });
+}
+
+function display(displayArray) {
+  $(".rogers-output").text(displayArray);
+  $("#display-result").show();
 }

@@ -11,4 +11,7 @@
 
 #display-result {
   display: none;
+  padding-top: 50px;
+  margin: 10px;
+  text-align: center;
 }
