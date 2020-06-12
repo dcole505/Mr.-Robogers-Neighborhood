@@ -20,9 +20,9 @@ function processInput(userInput) {
       }
       stringArray = numericalArray.map(String);
       for (i = 0; i < stringArray.length; i++) {
-        if ((stringArray[i].startsWith("1")) && (stringArray[i].indexOf("2") === -1) && (stringArray[i].indexOf("3") === -1)) {
+        if ((stringArray[i].indexOf("1") > -1) && (!(stringArray[i].includes("2"))) && (!(stringArray[i].includes("3")))) {
           stringArray[i] = stringArray[i].replace(stringArray[i],"Beep!");
-        } else if ((stringArray[i].startsWith("2")) && (stringArray.indexOf("3") === -1)) {
+        } else if ((stringArray[i].indexOf("2") > -1) && (!(stringArray[i].includes("3")))) {
           stringArray[i] = stringArray[i].replace(stringArray[i],"Boop");
           } else if (stringArray[i].indexOf("3") > -1) {
             stringArray[i] = stringArray[i].replace(stringArray[i],"Won't you be my neighbor?");
