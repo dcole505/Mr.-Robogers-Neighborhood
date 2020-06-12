@@ -12,26 +12,35 @@ function processInput(userInput) {
   let convertedArray = separatedInput.map(Number);
 
   if(convertedArray.includes(NaN)){
-    $("#form-clear").click(function() {
-      location.reload(true);
-      alert("Please enter valid numerical input!")
-    });
+    resetPage();
   } else {
       if(convertedArray.includes(1)) {
-        for (let element of convertedArray) {
-          convertedArray = "Beep!";
-          console.log(convertedArray);
+        for (i = 0; i < convertedArray.length; i++) {
+          if(convertedArray[i] === 1){
+            convertedArray[i] = "Beep!";
+          }
         }
       } else if(convertedArray.includes(2)) {
-          for (let element of convertedArray) {
-            convertedArray = "Boop";
-            console.log(convertedArray);
-          } 
+          for (i = 0; i < convertedArray.length; i++) {
+            if(convertedArray[i] === 2){
+              convertedArray[i] = "Boop";
+            }          } 
         }  else if(convertedArray.includes(3)) {
-            for (let element of convertedArray) {
-              convertedArray = "Won't you be my neighbor?";
-              console.log(convertedArray);
+            for (i = 0; i < convertedArray.length; i++) {
+              if(convertedArray[i] === 3) {
+                convertedArray[i] = "Won't you be my neighbor?";
+              }
             } 
           }
+      console.log(convertedArray);
   }
+}
+
+function resetPage() {
+  $("input#user-input").val("");
+  alert("Please enter valid numerical input!");
+  $("#form-clear").click(function(event) {
+    event.preventDefault();
+    location.reload(true);
+  });
 }
