@@ -9,9 +9,8 @@ $(document).ready(function() {
 
 function processInput(userInput) {
   const numericalArray = [];
+  let stringArray = [];
   const one = "1";
-  const two = "2";
-  const three = "3";
 
   if (userInput === NaN){
     resetPage();
@@ -19,14 +18,23 @@ function processInput(userInput) {
       for(i = 0; i <= userInput; i++) {
         numericalArray.push(i);
       }
-      let stringArray = numericalArray.map(String);
-      if (numericalArray.includes("1")) {
-        for (i = 0; i < numericalArray.length; i++) {
-          if (one.indexOf(numericalArray[i]) > -1) {
-            numericalArray[i] = numericalArray.replace(numericalArray[i],"Beep!");
-          }
+      stringArray = numericalArray.map(String);
+      for (i = 0; i < stringArray.length; i++) {
+        if (stringArray[i].startsWith("1")) {
+          stringArray[i] = stringArray[i].replace(stringArray[i],"Beep!");
         }
-      } 
+      }
+      for (i = 0; i < stringArray.length; i++) {
+        if (stringArray[i].startsWith("2")) {
+          stringArray[i] = stringArray[i].replace(stringArray[i],"Boop");
+        }
+      }
+      for (i = 0; i < stringArray.length; i++) {
+        if (stringArray[i].startsWith("3")) {
+          stringArray[i] = stringArray[i].replace(stringArray[i],"Won't you be my neighbor?");
+        }
+      }
+      console.log(stringArray);
   }
 }
 
