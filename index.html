@@ -14,12 +14,13 @@
       <p class="lead">"Often out of periods of losing come the greatest strivings toward a new winning streak."</p>
     </div>
     <div class="container">
-      <form id="input-form">
+      <form id="input-form" autocomplete="off">
         <div class="form-group">
           <label id="form-label" for="user-input" class="col-sm-8 col-form-label">If you enter a number, I'll have a special message for you.</label>
-          <input type="text" class="form-control" id="user-input" placeholder="123...">
+          <input type="number" class="form-control" id="user-input" placeholder="123...">
         </div>
-        <button id="form-clear" type="submit" class="btn btn-success">Submit</button>
+        <button id="submit-button" type="submit" class="btn btn-success">Submit</button>
+        <button id="reset-button" type="reset" class="btn btn-danger">Reset</button>
       </form>
     </div>
     <div id="display-result">
